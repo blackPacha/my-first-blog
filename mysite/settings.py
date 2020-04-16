@@ -25,7 +25,7 @@ SECRET_KEY = 'ac-=_ksel57hgt&bl=h7@5k@heakcqh)#0$9^rpv&e6ylh2xgp'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['blackpacha.pythonanywhere.com']
 
 
 # Application definition
