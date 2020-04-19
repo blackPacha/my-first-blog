@@ -6,17 +6,13 @@
 	<div>
 	    <h1><a href="">Meme Blog</a></h1>
 	</div>
-	<div>
-	    <p>Published: 16.04.2020, 10:03</p>
-	    <h2><a href="">First post</a></h2>
-	    <p>ugefuiiefsoeijptipogp</p>
-	</div>
-
-	<div>
-	    <p>Published: 16.04.2020, 10:05</p>
-	    <h2><a href="">Second post</a></h2>
-	    <p>ugefuiiefsoeijptipogp</p>
-	</div>
+	{% for post in posts %}
+            <div>
+		    <p>publié: {{ post.published_date }}</p>
+		    <h1><a href="">{{ post.title }}</a></h1>
+		    <p>{{ post.text|linebreaksbr }}</p>
+	    </div>
+	{% endfor %}
     </body>
 </html>
 
